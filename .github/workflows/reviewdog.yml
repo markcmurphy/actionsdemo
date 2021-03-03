@@ -7,15 +7,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: markdownlint-github-check
-        uses: markcmurphy/action-markdownlint@master
+        uses: reviewdog/action-markdownlint@v0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           level: warning
           filter_mode: nofilter
+          markdownlint_flags: '-r "${{ github.workspace }}/linting-rules/*" .'
       - name: markdownlint-github-pr-review
-        uses: markcmurphy/action-markdownlint@master
+        uses: reviewdog/action-markdownlint@v0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           level: warning
+          markdownlint_flags: '-r "${{ github.workspace }}/linting-rules/*" .'
