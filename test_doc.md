@@ -253,15 +253,18 @@ Merchants can use BigCommerce's [PCI DSS AOC](https://support.mybigcommerce.com/
 	3. Add Line Items or Custom Line Items
 	4. Add a Billing Address
 	5. Add a Shipping Address
-	6. Create a custom shipping quote
+	5. Add a Shipping Address
+	6. bigcommerce
+
+	7. Create a custom shipping quote
 2.  Take a Payment for the Order using one of the two methods below
 3.  Vaulted Card -- The shopper has saved a credit card
-	1. [Get Payment Methods](/api-reference/payments/payments-create-payment-token-api/payment-methods/paymentsmethodsget)
-	2.  [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
-	3.  [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
+	8. [Get Payment Methods](/api-reference/payments/payments-create-payment-token-api/payment-methods/paymentsmethodsget)
+	9.  [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
+	10. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
 4.  Credit Card -- The shopper has not saved a credit card
-	1. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
-	2. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
+	11. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
+	12. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
 
 ## Related resources
 
@@ -277,6 +280,7 @@ Merchants can use BigCommerce's [PCI DSS AOC](https://support.mybigcommerce.com/
 - [Merchants Classification Levels Visa](https://usa.visa.com/support/small-business/security-compliance.html#3)
 - [Merchants Classification Levels Mastercard](https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html)
 - [Self Assessment Questionnaire (SAQ) Types and Identifying which SAQ is for you](https://www.pcisecuritystandards.org/documents/SAQ-InstrGuidelines-v3_2_1.pdf?agreement=true&time=1562173376464)
+- 
 - [Maintaining Payment Security](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security)
 
 
