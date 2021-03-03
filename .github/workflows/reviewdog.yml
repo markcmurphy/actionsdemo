@@ -13,11 +13,11 @@ jobs:
           reporter: github-check
           level: warning
           filter_mode: nofilter
-          markdownlint_flags: '-r "${{ github.workspace }}/linting-rules/*" .'
+          markdownlint_flags: '-r "./linting-rules/*" .'
       - name: markdownlint-github-pr-review
         uses: reviewdog/action-markdownlint@v0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           level: warning
-          markdownlint_flags: '-r "${{ github.workspace }}/linting-rules/*" .'
+          markdownlint_flags: '-r "../../linting-rules/*" .'
