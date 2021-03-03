@@ -254,17 +254,27 @@ Merchants can use BigCommerce's [PCI DSS AOC](https://support.mybigcommerce.com/
 	4. Add a Billing Address
 	5. Add a Shipping Address
 	5. Add a Shipping Address
-	6. bigcommerce
+	6. 
+	7. bigcommerce
 
-	7. Create a custom shipping quote
-2.  Take a Payment for the Order using one of the two methods below
-3.  Vaulted Card -- The shopper has saved a credit card
-	8. [Get Payment Methods](/api-reference/payments/payments-create-payment-token-api/payment-methods/paymentsmethodsget)
-	9.  [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
-	10. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
-4.  Credit Card -- The shopper has not saved a credit card
-	11. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
-	12. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
+2.  Send a request /POST request to [Orders](/api-reference/orders/orders-api/orders/createanorder)
+	8. Make sure the `status_id` is 0
+	9.  Add the Customer ID or leave blank if the shopper is a guest
+	10. Add Line Items or Custom Line Items
+	11. Add a Billing Address
+	12. Add a Shipping Address
+	13. Add a Shipping Address
+	14. bigcommerce
+
+	15. Create a custom shipping quote
+3.  Take a Payment for the Order using one of the two methods below
+4.  Vaulted Card -- The shopper has saved a credit card
+	16. [Get Payment Methods](/api-reference/payments/payments-create-payment-token-api/payment-methods/paymentsmethodsget)
+	17. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
+	18. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
+5.  Credit Card -- The shopper has not saved a credit card
+	19. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
+	20. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
 
 ## Related resources
 
