@@ -279,6 +279,8 @@ Merchants can use BigCommerce's [PCI DSS AOC](https://support.mybigcommerce.com/
 - [Self Assessment Questionnaire (SAQ) Types and Identifying which SAQ is for you](https://www.pcisecuritystandards.org/documents/SAQ-InstrGuidelines-v3_2_1.pdf?agreement=true&time=1562173376464)
 - [Maintaining Payment Security](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security)
 
+
+
 ### Endpoints
 - [Catalog API](https://developer.bigcommerce.com/api-reference/catalog/catalog-api)
 - [Server to Server Checkout API](https://developer.bigcommerce.com/api-reference/cart-checkout/server-server-checkout-api)
