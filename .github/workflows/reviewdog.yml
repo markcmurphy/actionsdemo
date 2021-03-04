@@ -21,4 +21,4 @@ jobs:
           reporter: github-pr-review
           level: warning
           filter_mode: nofilter
-          markdownlint_flags: '-V --rules "${{ github.workspace }}/linting-rules/*.js" .'
+          markdownlint_flags: '-V .'
