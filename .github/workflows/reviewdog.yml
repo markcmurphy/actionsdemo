@@ -54,5 +54,4 @@ jobs:
           config_file: ".markdownlint.jsonc"
           # ignore_files: "examples/ignore/*"
           rules: "./linting-rules/*"
-      - name: run pwd
-        run: pwd
+      
