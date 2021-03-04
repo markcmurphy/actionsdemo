@@ -149,7 +149,7 @@ is a guest
 	13. Add a Shipping Address
 	14. bigcommerce
 
-HTTP
+  GET
 
 	16. Create a custom shipping quote
 3.  Take a Payment for the Order using one of the two methods below
