@@ -20,6 +20,8 @@
  * HTTP keywords in headers can either be fenced or not.
  */
 
+console.log("backtick");
+
 const http_keywords = [
     "GET",
     "POST",
