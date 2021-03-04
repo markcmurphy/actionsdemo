@@ -13,7 +13,7 @@ jobs:
           reporter: github-check
           level: warning
           filter_mode: nofilter
-          markdownlint_flags: '-r "./linting-rules/*.js" .'
+          markdownlint_flags: '-r "./linting-rules/*"'
 
 # name: reviewdog
 # on: [push]
