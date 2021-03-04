@@ -13,15 +13,7 @@ jobs:
           reporter: github-check
           level: warning
           filter_mode: nofilter
-          markdownlint_flags: "-r "./linting-rules/*.js" ."
-      # - name: markdownlint-github-pr-review
-      #   uses: reviewdog/action-markdownlint@v0.1
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     reporter: github-check
-      #     level: warning
-      #     filter_mode: nofilter
-      #     markdownlint_flags: '--config ./.markdownlint.jsonc ./test/*'
+          markdownlint_flags: '-r "./linting-rules/*.js" .'
 
 # name: reviewdog
 # on: [push]
