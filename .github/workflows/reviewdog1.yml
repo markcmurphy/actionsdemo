@@ -16,7 +16,7 @@
 #           markdownlint_flags: '-r "./linting-rules/*"'
 
 name: reviewdog
-on: [push]
+on: [pull_request]
 jobs:
   markdownlint:
     name: runner / markdownlint
