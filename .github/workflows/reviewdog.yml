@@ -53,5 +53,5 @@ jobs:
           # files: "./test/*.md"
           config_file: ".markdownlint.jsonc"
           # ignore_files: "examples/ignore/*"
-          rules: "./linting-rules/*"
+          rules: "-r ./linting-rules/*"
       
