@@ -1,4 +1,0 @@
-# Header
-
-ping
-bigcommerce
