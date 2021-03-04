@@ -50,7 +50,7 @@ jobs:
       - name: markdownlint-cli
         uses: nosborn/github-action-markdown-cli@v1.1.1
         with:
-          files: "./test/*.md"
-          config_file: ".markdownlint.jsonc"
+          files: "./test/"
+          # config_file: "./markdownlint.jsonc"
           # ignore_files: "examples/ignore/*"
-          rules: "./linting-rules/*.js"
+          rules: "./linting-rules/*"
