@@ -50,7 +50,11 @@ jobs:
       - name: markdownlint-cli
         uses: nosborn/github-action-markdown-cli@v1.1.1
         with:
-          files: "./test/*.md"
-          # config_file: ".markdownlint.jsonc"
+          # files: "./test/*.md"
+          config_file: "./.markdownlint.jsonc"
           # ignore_files: "examples/ignore/*"
           rules: "./linting-rules/*"
+      - name: View context attributes
+        uses: actions/github-script@v3
+        with:
+          script: console.log(context)
