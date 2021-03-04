@@ -45,5 +45,5 @@ jobs:
           files: "./test/test_doc.md"
           config_file: ".markdownlint.json"
           # ignore_files: "examples/ignore/*"
-          # rules: "./linting-rules/*"
+          rules: "./linting-rules/backtick-http.js"
       

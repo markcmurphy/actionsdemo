@@ -149,15 +149,17 @@ is a guest
 	13. Add a Shipping Address
 	14. bigcommerce
 
-	15. Create a custom shipping quote
+HTTP
+
+	16. Create a custom shipping quote
 3.  Take a Payment for the Order using one of the two methods below
 4.  Vaulted Card -- The shopper has saved a credit card
-	16. [Get Payment Methods](/api-reference/payments/payments-create-payment-token-api/payment-methods/paymentsmethodsget)
-	17. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
-	18. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
+	17. [Get Payment Methods](/api-reference/payments/payments-create-payment-token-api/payment-methods/paymentsmethodsget)
+	18. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
+	19. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
 5.  Credit Card -- The shopper has not saved a credit card
-	19. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
-	20. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
+	20. [Create Access Token](/api-reference/payments/payments-create-payment-token-api/payment-access-token/paymentsaccesstokenspost)
+	21. [Process Payment](/api-reference/payments/payments-process-payments/payment/paymentspost)
 
 ## Related resources
 
