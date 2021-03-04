@@ -6,14 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: markdownlint-github-check
-        uses: reviewdog/action-markdownlint@v0.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-check
-          level: warning
-          filter_mode: nofilter
-          markdownlint_flags: '-r "./linting-rules/*" .'
+      # - name: markdownlint-github-check
+      #   uses: reviewdog/action-markdownlint@v0.1
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     reporter: github-check
+      #     level: warning
+      #     filter_mode: nofilter
+      #     markdownlint_flags: '-r "./linting-rules/*" .'
       - name: markdownlint-github-pr-review
         uses: reviewdog/action-markdownlint@v0.1
         with:
@@ -21,4 +21,4 @@ jobs:
           reporter: github-check
           level: warning
           filter_mode: nofilter
-          markdownlint_flags: '-V .'
+          # markdownlint_flags: '.'
