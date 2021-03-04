@@ -21,4 +21,4 @@ jobs:
           reporter: github-check
           level: warning
           filter_mode: nofilter
-          markdownlint_flags: '--config ./linting-rules/* ./test/*'
+          markdownlint_flags: '--config ./.markdownlint.jsonc -r ./linting-rules/* ./test/*'
