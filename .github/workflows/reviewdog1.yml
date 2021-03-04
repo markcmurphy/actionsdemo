@@ -23,16 +23,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: markcmurphy/action-markdownlint@master
+      # - uses: markcmurphy/action-markdownlint@master
       # - run: reviewdog -list
 
-      # - name: markdownlint-github-check
-      #   uses: reviewdog/action-markdownlint@v0.1
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     reporter: github-check
-      #     level: warning
-      #     filter_mode: nofilter
+      - name: markdownlint-github-check
+        uses: markcmurphy/action-markdownlint@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-check
+          level: warning
+          filter_mode: nofilter
       #     # markdownlint_flags: '-r "./linting-rules/*" .'
       #     markdownlint_flags: '--config ".markdownlint.jsonc" -r "./linting-rules/*.js"'
       # - name: markdownlint-github-pr-review
