@@ -30,7 +30,7 @@ jobs:
         uses: markcmurphy/action-markdownlint@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-check
+          reporter: github-pr-review
           level: warning
           filter_mode: nofilter
       #     # markdownlint_flags: '-r "./linting-rules/*" .'
