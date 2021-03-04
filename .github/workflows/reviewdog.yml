@@ -50,7 +50,7 @@ jobs:
       - name: markdownlint-cli
         uses: nosborn/github-action-markdown-cli@v1.1.1
         with:
-          files: "/test/*"
+          files: "test/*"
           # config_file: ".markdownlint.yaml"
           # ignore_files: "examples/ignore/*"
-          rules: "/linting-rules/*"
+          rules: "linting-rules/*"
