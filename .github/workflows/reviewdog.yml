@@ -55,6 +55,5 @@ jobs:
           # ignore_files: "examples/ignore/*"
           rules: "./linting-rules/*"
       - name: View context attributes
-        uses: actions/github-script@v3
         run: |
           ls
