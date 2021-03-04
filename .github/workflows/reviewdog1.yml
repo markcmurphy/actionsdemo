@@ -23,18 +23,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # - uses: reviewdog/action-setup@v1
+      - uses: markcmurphy/action-markdownlint@master
       # - run: reviewdog -list
 
-      - name: markdownlint-github-check
-        uses: reviewdog/action-markdownlint@v0.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-check
-          level: warning
-          filter_mode: nofilter
-          # markdownlint_flags: '-r "./linting-rules/*" .'
-          markdownlint_flags: '--config ".markdownlint.jsonc" -r "./linting-rules/*.js"'
+      # - name: markdownlint-github-check
+      #   uses: reviewdog/action-markdownlint@v0.1
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     reporter: github-check
+      #     level: warning
+      #     filter_mode: nofilter
+      #     # markdownlint_flags: '-r "./linting-rules/*" .'
+      #     markdownlint_flags: '--config ".markdownlint.jsonc" -r "./linting-rules/*.js"'
       # - name: markdownlint-github-pr-review
       #   uses: reviewdog/action-markdownlint@v0.1
       #   with:
@@ -43,11 +43,12 @@ jobs:
       #     level: warning
       #     filter_mode: nofilter
       #     markdownlint_flags: '--config ./.markdownlint.jsonc ./test/*'
-      - name: markdownlint-cli
-        uses: nosborn/github-action-markdown-cli@v1.1.1
-        with:
-          files: "./test/test_doc.md"
-          config_file: ".markdownlint.jsonc"
-          # ignore_files: "examples/ignore/*"
-          rules: "./linting-rules/*.js"
+
+      # - name: markdownlint-cli
+      #   uses: nosborn/github-action-markdown-cli@v1.1.1
+      #   with:
+      #     files: "./test/test_doc.md"
+      #     config_file: ".markdownlint.jsonc"
+      #     # ignore_files: "examples/ignore/*"
+      #     rules: "./linting-rules/*.js"
       
