@@ -51,9 +51,8 @@ jobs:
         uses: nosborn/github-action-markdown-cli@v1.1.1
         with:
           # files: "./test/*.md"
-          config_file: "./.markdownlint.jsonc"
+          config_file: ".markdownlint.jsonc"
           # ignore_files: "examples/ignore/*"
           rules: "./linting-rules/*"
-      - name: View context attributes
-        run: |
-          ls
+      - name: run pwd
+        run: pwd
