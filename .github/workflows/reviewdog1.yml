@@ -34,7 +34,7 @@ jobs:
           level: warning
           filter_mode: added
       #     # markdownlint_flags: '-r "./linting-rules/*" .'
-      #     markdownlint_flags: '--config ".markdownlint.jsonc" -r "./linting-rules/*.js"'
+          markdownlint_flags: '--config ".markdownlint.jsonc" -r "./linting-rules/*.js"'
       # - name: markdownlint-github-pr-review
       #   uses: reviewdog/action-markdownlint@v0.1
       #   with:
