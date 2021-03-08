@@ -1,20 +1,3 @@
-# name: reviewdog
-# on: [push]
-# jobs:
-#   markdownlint:
-#     name: runner / markdownlint
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: markdownlint-github-check
-#         uses: reviewdog/action-markdownlint@v0.1
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           reporter: github-check
-#           level: warning
-#           filter_mode: nofilter
-#           markdownlint_flags: '-r "./linting-rules/*"'
-
 name: reviewdog
 on: [pull_request]
 jobs:
@@ -23,8 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # - uses: markcmurphy/action-markdownlint@master
-      # - run: reviewdog -list
 
       - name: markdownlint-github-check
         uses: markcmurphy/action-markdownlint@master
@@ -33,22 +14,5 @@ jobs:
           reporter: github-pr-review
           level: warning
           filter_mode: added
-      #     # markdownlint_flags: '-r "./linting-rules/*" .'
           markdownlint_flags: '--config ".markdownlint.jsonc" -r "./linting-rules/*.js"'
-      # - name: markdownlint-github-pr-review
-      #   uses: reviewdog/action-markdownlint@v0.1
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     reporter: github-check
-      #     level: warning
-      #     filter_mode: nofilter
-      #     markdownlint_flags: '--config ./.markdownlint.jsonc ./test/*'
-
-      # - name: markdownlint-cli
-      #   uses: nosborn/github-action-markdown-cli@v1.1.1
-      #   with:
-      #     files: "./test/test_doc.md"
-      #     config_file: ".markdownlint.jsonc"
-      #     # ignore_files: "examples/ignore/*"
-      #     rules: "./linting-rules/*.js"
       
