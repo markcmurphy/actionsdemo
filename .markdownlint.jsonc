@@ -1,8 +1,8 @@
 {
   "default": false,
-//   "MD003": { "style": "atx_closed" },
   "MD007": false,
   "MD013": false,
+  "MD102": true,
   "MD103": true,
   "no-hard-tabs": false,
   "whitespace": false

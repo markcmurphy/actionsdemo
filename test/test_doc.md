@@ -12,10 +12,10 @@
   - [Storefront channels](#storefront-channels)
   - [Multisite](#multisite)
   - [Catalog Management](#catalog-management)
-    - [Sync the catalog](#sync-the-catalog)
     - [Real time catalog](#real-time-catalog)
     - [Real time pricing and inventory](#real-time-pricing-and-inventory)
   - [Cart management](#cart-management)
+    - [Sync the catalog](#sync-the-catalog)
     - [Guest Cart](#guest-cart)
     - [Content management system](#content-management-system)
   - [Checkout management](#checkout-management)
@@ -105,9 +105,7 @@ Use BigCommerce as the back-end for several stores. By placing an application la
 
 Using the [Catalog API](https://developer.bigcommerce.com/api-reference/catalog/catalog-api) you can return product data to your product details page and product listing page.
 
-### Sync the catalog
 
-Best practice is to get product details and cache them in a database to display them. This will speed up the application and allow you to control what information is shown to the customer. Caching the details also lets you implement search in your application.
 
 ### Real time catalog
 
@@ -120,6 +118,11 @@ If you prefer working with a local copy of your data, but want to make sure that
 ## Cart management
 
 Use the [Server to Server Cart API](https://developer.bigcommerce.com/api-reference/cart-checkout/server-server-cart-api) to create carts for existing customers and guest customers.
+
+
+### Sync the catalog
+
+Best practice is to get product details and cache them in a database to display them. This will speed up the application and allow you to control what information is shown to the customer. Caching the details also lets you implement search in your application.
 
 ### Guest Cart
 
@@ -145,9 +148,10 @@ is a guest
 	9.  Add the Customer ID or leave blank if the shopper is a guest
 	10. Add Line Items or Custom Line Items
 	11. Add a Billing Address
-	12. Add a Shipping Address
+	12. bigcommerce
 	13. Add a Shipping Address
-	14. bigcommerce
+	14. Add a Shipping Address
+	15. bigcommerce
 
   GET
 
