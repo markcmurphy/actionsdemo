@@ -14,4 +14,6 @@ jobs:
           reporter: github-pr-review
           level: warning
           filter_mode: added
+          markdownlint_flags: '--config ".markdownlint.jsonc" -r "./linting-rules/*.js"'
+          
       
