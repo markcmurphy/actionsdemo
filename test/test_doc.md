@@ -139,19 +139,17 @@ is a guest
 	3. Add Line Items or Custom Line Items
 	4. Add a Billing Address
 	5. Add a Shipping Address
-	5. Add a Shipping Address
-	6. 
+	5. Add a Shipping Address	6. 
 	7. bigcommerce
 
 2.  Send a request /POST request to [Orders](/api-reference/orders/orders-api/orders/createanorder)
 	8. Make sure the `status_id` is 0
 	9.  Add the Customer ID or leave blank if the shopper is a guest
 	10. Add Line Items or Custom Line Items
-	11. Add a Billing Address
-	12. bigcommerce
 	13. Add a Shipping Address
 	14. Add a Shipping Address
 	15. bigcommerce
+	16. bigcommerce
 
   GET
 
